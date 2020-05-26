@@ -20,8 +20,8 @@ jobs:
       - name: invoke-aws-lambda
         uses: gagoar/invoke-aws-lambda@v3
         with:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ config.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ config.AWS_SECRET_ACCESS_KEY }}
           REGION: us-east-1
           FunctionName: cm-slack-bot
           #payload: GET /repos/:owner/:repo/pulls/:pull_number
