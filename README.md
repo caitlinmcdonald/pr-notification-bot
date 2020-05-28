@@ -1,3 +1,3 @@
-# cm-slack-bot
+# prNotificationBot
 slack bot
 edits....
